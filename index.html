@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact-form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="title">Title*</label>
+            <select id="title" name="title" class="form-control" required>
+              <option value="">--Please select--</option>
+              <option value="Mr">Mr</option>
+              <option value="Mrs">Mrs</option>
+              <option value="Ms">Ms</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="firstName">First Name*</label>
+            <input type="text" id="firstName" name="firstName" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name*</label>
+            <input type="text" id="lastName" name="lastName" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="telephone">Telephone*</label>
+            <input type="tel" id="telephone" name="telephone" class="form-control" pattern="[0-9]{10}" required>
+          </div>
+          <div class="form-group">
+            <label for="fileUpload">File Upload</label>
+            <input type="file" id="fileUpload" name="fileUpload" accept=".pdf, image/*" class="form-control-file">
+          </div>
+          <div class="form-group">
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" class="form-control" maxlength="300"></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+      <script src="app.js"></script>
+      
+    
+</body>
+</html>
